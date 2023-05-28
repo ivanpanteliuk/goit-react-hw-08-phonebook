@@ -1,5 +1,4 @@
 import { nanoid } from 'nanoid';
-import { Input, Label } from './FilterInput.styled';
 import { useDispatch } from 'react-redux';
 import { setFilter } from 'redux/filter/filterSlice';
 import { TextField } from '@mui/material';
