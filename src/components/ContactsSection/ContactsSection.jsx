@@ -1,15 +1,14 @@
-import PropTypes from 'prop-types';
-import { Heading } from 'components/App/App.styled';
 import ContactList from 'components/ContactList/ContactList';
-import FilterInput from 'components/FilterInput/FilterInput';
 import Loader from 'components/Loader/Loader';
 import { Notify } from 'notiflix';
 import { useSelector } from 'react-redux';
 import { useGetContactsQuery } from 'redux/contacts/contactsApi';
 import { selectFilter } from 'redux/selectors';
+import { ContactsHeading } from './ContactsSection.styles';
 
-export const ContactsSection = ({ deleteContact }) => {
+export const ContactsSection = () => {
   const { isLoading, isError, error, data: contacts } = useGetContactsQuery();
+
   const filter = useSelector(selectFilter);
   const visibleContacts = contacts?.filter(contact =>
     contact.name.toLowerCase().includes(filter.toLowerCase())
@@ -22,24 +21,22 @@ export const ContactsSection = ({ deleteContact }) => {
   return (
     <>
       {isLoading && <Loader />}
-      {!!contacts?.length && (
-        <>
-          <Heading>Contacts</Heading>
-          {contacts?.length > 1 && <FilterInput />}
-          {!!visibleContacts?.length && (
-            <ContactList
-              contacts={visibleContacts}
-              deleteContact={deleteContact}
-            />
-          )}
-        </>
-      )}
+      <div>
+        <ContactsHeading>Contacts</ContactsHeading>
+        {!!contacts?.length ? (
+          !!visibleContacts?.length ? (
+            <ContactList contacts={visibleContacts} />
+          ) : (
+            <ContactsHeading>
+              There is no matches for this search query
+            </ContactsHeading>
+          )
+        ) : (
+          <ContactsHeading>There is no stored contacts yet </ContactsHeading>
+        )}
+      </div>
     </>
   );
 };
 
 export default ContactsSection;
-
-ContactsSection.propTypes = {
-  deleteContact: PropTypes.func.isRequired,
-};

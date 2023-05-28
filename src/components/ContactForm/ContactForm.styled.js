@@ -1,3 +1,4 @@
+import { Heading } from 'components/App/App.styled';
 import styled from '@emotion/styled';
 
 export const Form = styled.form`
@@ -46,4 +47,23 @@ export const Button = styled.button`
 
 export const Label = styled.label`
   margin-bottom: 10px;
+`;
+
+export const StyledButton = styled(Button)`
+  display: block;
+  background-color: #97efe9;
+  width: 100%;
+  color: black;
+  &:hover {
+    background-color: #2bded2;
+  }
+`;
+export const CFHeading = styled(Heading)`
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.334;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 40px;
 `;
