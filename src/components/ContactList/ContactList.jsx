@@ -1,6 +1,7 @@
 import { List, ListItem, Button } from './ContactList.styled';
 import { useDeleteContactMutation } from 'redux/contacts/contactsApi';
 import { Notify } from 'notiflix';
+import ErrorMessage from 'components/ErrorMessage/ErrorMessage';
 
 const ContactList = ({ contacts }) => {
   const [deleteContact, deleteRes] = useDeleteContactMutation();
@@ -14,13 +15,7 @@ const ContactList = ({ contacts }) => {
   };
 
   if (deleteRes.isError)
-    return (
-      <p>
-        Something went wrong...
-        <br />
-        Error code {deleteRes.error.status}
-      </p>
-    );
+    return <ErrorMessage message={deleteRes.error.status} />;
 
   return (
     <List>

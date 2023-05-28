@@ -12,6 +12,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import ErrorMessage from 'components/ErrorMessage/ErrorMessage';
 
 const notifyOptions = {
   width: '450px',
@@ -59,13 +60,7 @@ function ContactForm() {
   };
 
   if (addContactRes.error) {
-    return (
-      <p>
-        Something went wrong...
-        <br />
-        Error code {addContactRes.error.status}
-      </p>
-    );
+    return <ErrorMessage message={addContactRes.error.status} />;
   }
 
   return (
