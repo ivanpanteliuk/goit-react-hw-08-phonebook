@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/goit-react-hw-08-phonebook/static/css/main.3bbfef1c.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.f39af9e5.js",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.b284ba2c.js",
     "static/js/826.cab699ce.chunk.js": "/goit-react-hw-08-phonebook/static/js/826.cab699ce.chunk.js",
-    "static/js/239.b9594b58.chunk.js": "/goit-react-hw-08-phonebook/static/js/239.b9594b58.chunk.js",
+    "static/js/268.33880958.chunk.js": "/goit-react-hw-08-phonebook/static/js/268.33880958.chunk.js",
     "static/js/77.ccf87125.chunk.js": "/goit-react-hw-08-phonebook/static/js/77.ccf87125.chunk.js",
     "static/js/392.813346f5.chunk.js": "/goit-react-hw-08-phonebook/static/js/392.813346f5.chunk.js",
     "static/js/219.0d1dc97f.chunk.js": "/goit-react-hw-08-phonebook/static/js/219.0d1dc97f.chunk.js",
@@ -13,9 +13,9 @@
     "static/media/phone.png": "/goit-react-hw-08-phonebook/static/media/phone.96bcdaac221bacb72438.png",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
     "main.3bbfef1c.css.map": "/goit-react-hw-08-phonebook/static/css/main.3bbfef1c.css.map",
-    "main.f39af9e5.js.map": "/goit-react-hw-08-phonebook/static/js/main.f39af9e5.js.map",
+    "main.b284ba2c.js.map": "/goit-react-hw-08-phonebook/static/js/main.b284ba2c.js.map",
     "826.cab699ce.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/826.cab699ce.chunk.js.map",
-    "239.b9594b58.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/239.b9594b58.chunk.js.map",
+    "268.33880958.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/268.33880958.chunk.js.map",
     "77.ccf87125.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/77.ccf87125.chunk.js.map",
     "392.813346f5.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/392.813346f5.chunk.js.map",
     "219.0d1dc97f.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/219.0d1dc97f.chunk.js.map",
@@ -23,6 +23,6 @@
   },
   "entrypoints": [
     "static/css/main.3bbfef1c.css",
-    "static/js/main.f39af9e5.js"
+    "static/js/main.b284ba2c.js"
   ]
 }
