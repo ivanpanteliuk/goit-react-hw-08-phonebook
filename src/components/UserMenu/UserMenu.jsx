@@ -2,12 +2,12 @@ import Avatar from '@mui/material/Avatar';
 import { StyledNavLink } from 'components/AppBar/AppBar.styled';
 import { UserContainer, UserEmail } from './UserMenu.styles';
 
-import { useAuth } from 'hooks/useAuth';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { logOutUser } from 'redux/auth/authOperations';
+import { selectUser } from 'redux/selectors';
 
 export default function UserMenu() {
-  const { user } = useAuth();
+  const user = useSelector(selectUser);
   const dispatch = useDispatch();
 
   const handleLogOut = () => {
@@ -17,7 +17,7 @@ export default function UserMenu() {
   return (
     <UserContainer>
       <Avatar sx={{ m: 1, bgcolor: '#97efe9' }}></Avatar>
-      <UserEmail>Welcome, {user.name}</UserEmail>
+      <UserEmail>Welcome, {user?.user?.name || user.name}</UserEmail>
       <StyledNavLink to="/" onClick={handleLogOut}>
         Log Out
       </StyledNavLink>

@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const UserEmail = styled.p`
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  margin-right: 15px;
+  font-family: 'Dosis';
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 1.334;

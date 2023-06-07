@@ -83,7 +83,7 @@ function ContactForm() {
             component="form"
             onSubmit={handleSubmit}
             noValidate
-            sx={{ mt: 1 }}
+            sx={{ mt: 1, fontFamily: 'Dosis' }}
           >
             <TextField
               margin="normal"

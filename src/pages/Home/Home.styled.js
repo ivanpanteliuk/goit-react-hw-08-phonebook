@@ -42,4 +42,8 @@ export const HeroSubText = styled.p`
   right: 260px;
   top: 223px;
   background-color: #c2f2ff;
+  font-family: 'Dosis';
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0em;
 `;

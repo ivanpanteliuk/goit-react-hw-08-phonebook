@@ -44,6 +44,7 @@ export const Logo = styled(NavLink)`
 export const StyledNavLink = styled(NavLink)`
   margin-right: 25px;
   color: #ffffff;
+  font-family: 'Dosis';
   text-decoration: none;
   position: relative;
   padding: 10px 15px;
