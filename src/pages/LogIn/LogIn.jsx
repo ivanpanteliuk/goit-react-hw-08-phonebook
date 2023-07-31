@@ -21,7 +21,6 @@ export default function LogIn() {
   const isLoggedIn = useSelector(selectIsLoggedIn);
   const navigate = useNavigate();
   const error = useSelector(selectError);
-  console.log(error);
   if (error) Notify.failure(`${error}`);
 
   useEffect(() => {
